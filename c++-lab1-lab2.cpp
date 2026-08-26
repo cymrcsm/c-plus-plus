@@ -3,30 +3,31 @@
 using namespace std;
 
 string full_name;
-string age;
+int age;
 string date_of_birth;
 string gender;
 string address;
-string contact_number_1;
+long long contact_number_1;
 string email;
 
 string student_id;
 string course;
 string major;
-string year_level;
+int year_level;
 string section;
 string school;
 
 string emergency_contact_name;
 string relationship_to_student;
-string contact_number_2;
+long long contact_number_2;
 
 int main(){
     cout << "=================Personal Information=================" << endl;
     cout << "Enter your full name          : ";
     getline(cin, full_name);
     cout << "Enter your age                : ";
-    getline(cin, age);
+    cin >> age;
+    cin.ignore();
     cout << "Enter your date of birth      : ";
     getline(cin, date_of_birth);
     cout << "Enter your gender             : ";
@@ -34,7 +35,8 @@ int main(){
     cout << "Enter your address            : ";
     getline(cin, address);
     cout << "Enter your contact number     : +63";
-    getline(cin, contact_number_1);
+    cin >> contact_number_1;
+    cin.ignore();
     cout << "Enter your email address      : ";
     getline(cin, email);
     cout << "=================Academic Information=================" << endl;
@@ -45,7 +47,8 @@ int main(){
     cout << "Enter your major              : ";
     getline(cin, major);
     cout << "Enter your year level         : ";
-    getline(cin, year_level);
+    cin >> year_level;
+    cin.ignore();
     cout << "Enter your section            : ";
     getline(cin, section);
     cout << "Enter your school             : ";
@@ -56,7 +59,8 @@ int main(){
     cout << "Enter relationship to student : ";
     getline(cin, relationship_to_student);
     cout << "Enter contact number          : +63";
-    getline(cin, contact_number_2);
+    cin >> contact_number_2;
+    cin.ignore();
 
 
     cout << "====================Personal Information====================" << endl;
